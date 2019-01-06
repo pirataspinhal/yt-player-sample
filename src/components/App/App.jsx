@@ -1,12 +1,28 @@
+/* Please refer to https://developers.google.com/youtube/player_parameters for usage */
 import React from 'react';
-// import logo from 'assets/imgs/logo.svg';
+import YouTubeIframeLoader from 'youtube-iframe';
 import 'assets/stylesheets/App.css';
 
-const App = () => (
-  <div className="App">
-    <div id="video-placeholder" />
-    <script src="https://www.youtube.com/iframe_api" />
-  </div>
-);
+class App extends React.Component {
+  componentWillMount() {
+    YouTubeIframeLoader.load(YT => (
+      new YT.Player('video-placeholder', {
+        width: 640,
+        videoId: 'dQw4w9WgXcQ',
+        playerVars: {
+          autoplay: 1,
+          controls: 0,
+          rel: 0,
+        },
+      })
+    ));
+  }
+
+  render = () => (
+    <div className="App">
+      <div id="video-placeholder" />
+    </div>
+  );
+}
 
 export default App;
