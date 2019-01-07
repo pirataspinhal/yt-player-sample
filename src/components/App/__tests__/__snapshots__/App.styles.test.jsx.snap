@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing App.styles... Button should render correctly without props 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bxivhb",
+        "isStatic": true,
+        "rules": Array [
+          "
+      display: block;
+      width: 32px;
+      height: 32px;
+      color: #727272;
+      cursor: pointer;
+      transition: 0.2s transform ease;
+    
+      &:hover {
+        transform: scale(1.1);
+      }
+    ",
+        ],
+      },
+      "displayName": "styled.i",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bxivhb",
+      "target": "i",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;
+
+exports[`Testing App.styles... Container should render correctly without props 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": true,
+        "rules": Array [
+          "
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    ",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;
+
+exports[`Testing App.styles... ControlsContainer should render correctly without props 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-htpNat",
+        "isStatic": true,
+        "rules": Array [
+          "
+      display: flex;
+      justify-content: center;
+      width: 640px;
+      padding: 8px;
+      & > * {
+        margin: 8px;
+      }
+    ",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-htpNat",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;
+
+exports[`Testing App.styles... PlayerContainer should render correctly as visible true 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bwzfXH",
+        "isStatic": false,
+        "rules": Array [
+          "
+      display: block;
+      height: fit-content;
+      width: fit-content;
+      transition: 0.2s all ease;
+      & > iframe { display: block; }
+    
+      ",
+          [Function],
+          "
+    ",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bwzfXH",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  visible={true}
+/>
+`;
+
+exports[`Testing App.styles... PlayerContainer should render correctly without props 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bwzfXH",
+        "isStatic": false,
+        "rules": Array [
+          "
+      display: block;
+      height: fit-content;
+      width: fit-content;
+      transition: 0.2s all ease;
+      & > iframe { display: block; }
+    
+      ",
+          [Function],
+          "
+    ",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bwzfXH",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;
+
+exports[`Testing App.styles... ProgressBar should render correctly without props 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-EHOje",
+        "isStatic": true,
+        "rules": Array [
+          "
+      width: 100%;
+      margin: 8px;
+    ",
+        ],
+      },
+      "displayName": "styled.input",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-EHOje",
+      "target": "input",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;
+
+exports[`Testing App.styles... Timer should render correctly without props 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-ifAKCX",
+        "isStatic": true,
+        "rules": Array [
+          "
+      display: flex;
+      color: #727272;
+      align-items: center;
+      font-weight: 700;
+      font-size: 18px;
+    ",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-ifAKCX",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;
