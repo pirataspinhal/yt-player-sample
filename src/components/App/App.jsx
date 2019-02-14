@@ -106,8 +106,7 @@ class App extends React.Component {
         <div id="video-placeholder" />
       </PlayerContainer>
       <ProgressBar
-        onChange={this.handleProgressBarSeek}
-        type="range"
+        onClick={this.handleProgressBarSeek}
         value={this.state.progressBar}
       />
       <ControlsContainer>

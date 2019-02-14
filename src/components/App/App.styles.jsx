@@ -1,3 +1,5 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
@@ -62,7 +64,83 @@ export const Timer = styled.div`
   font-size: 18px;
 `;
 
-export const ProgressBar = styled.input`
+export const ProgressBarContainer = styled.div`
+  position: relative;
+  height: fit-content;
   width: 100%;
-  margin: 8px;
 `;
+
+export const ProgressBarHandle = styled.div`
+  position: absolute;
+  opacity: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  top: -5px;
+  left: ${props => props.offset || 0}%;
+  transform: translateX(-5px);
+  background: #EEEEEE;
+  transition: all 100ms ease;
+`;
+
+export const ProgressBarCustom = styled.div`
+  position: relative;
+  height: 6px;
+  width: 100%;
+  margin: 16px 0;
+  border-radius: 4px;
+  background: #757575;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    width: ${props => props.value || 0}%;
+    border-radius: 4px;
+    background: #E0E0E0;
+    transition: all 100ms ease;
+  }
+  &:hover {
+    ${ProgressBarHandle} {
+      opacity: 1;
+    }
+    &::before {
+      background: #FF0000;
+    }
+  }
+`;
+
+export class ProgressBar extends React.Component {
+  componentWillMount() {
+    this.ref = React.createRef();
+  }
+
+  handleClick = (event) => {
+    const bounds = this.ref.current ? this.ref.current.getBoundingClientRect() : {};
+    if (bounds === {}) return;
+
+    const seek = (event.pageX - bounds.left) / (bounds.right - bounds.left);
+    const changeEvent = event;
+    changeEvent.target.value = seek * 100;
+    this.props.onClick(changeEvent);
+  }
+
+  render = () => (
+    <ProgressBarContainer {...this.props} onClick={this.handleClick}>
+      <ProgressBarCustom value={this.props.value} ref={this.ref}>
+        <ProgressBarHandle offset={this.props.value} />
+      </ProgressBarCustom>
+    </ProgressBarContainer>
+  );
+}
+
+ProgressBar.propTypes = {
+  onClick: PropTypes.func,
+  value: PropTypes.number.isRequired,
+};
+
+ProgressBar.defaultProps = {
+  onClick: () => {},
+};

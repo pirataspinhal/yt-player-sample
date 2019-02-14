@@ -183,7 +183,22 @@ exports[`Testing App.styles... PlayerContainer should render correctly without p
 />
 `;
 
-exports[`Testing App.styles... ProgressBar should render correctly without props 1`] = `
+exports[`Testing App.styles... ProgressBar should render correctly with value 1`] = `
+<styled.div
+  onClick={[Function]}
+  value={50}
+>
+  <styled.div
+    value={50}
+  >
+    <styled.div
+      offset={50}
+    />
+  </styled.div>
+</styled.div>
+`;
+
+exports[`Testing App.styles... ProgressBarContainer should render correctly without props 1`] = `
 <StyledComponent
   forwardedComponent={
     Object {
@@ -194,16 +209,215 @@ exports[`Testing App.styles... ProgressBar should render correctly without props
         "isStatic": true,
         "rules": Array [
           "
+      position: relative;
+      height: fit-content;
       width: 100%;
-      margin: 8px;
     ",
         ],
       },
-      "displayName": "styled.input",
+      "displayName": "styled.div",
       "foldedComponentIds": Array [],
       "render": [Function],
       "styledComponentId": "sc-EHOje",
-      "target": "input",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;
+
+exports[`Testing App.styles... ProgressBarCustom should render correctly with value 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-gzVnrw",
+        "isStatic": false,
+        "rules": Array [
+          "
+      position: relative;
+      height: 6px;
+      width: 100%;
+      margin: 16px 0;
+      border-radius: 4px;
+      background: #757575;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 6px;
+        width: ",
+          [Function],
+          "%;
+        border-radius: 4px;
+        background: #E0E0E0;
+        transition: all 100ms ease;
+      }
+      &:hover {
+        ",
+          ".sc-bZQynM",
+          " {
+          opacity: 1;
+        }
+        &::before {
+          background: #FF0000;
+        }
+      }
+    ",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-gzVnrw",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  value="50"
+/>
+`;
+
+exports[`Testing App.styles... ProgressBarCustom should render correctly without props 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-gzVnrw",
+        "isStatic": false,
+        "rules": Array [
+          "
+      position: relative;
+      height: 6px;
+      width: 100%;
+      margin: 16px 0;
+      border-radius: 4px;
+      background: #757575;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 6px;
+        width: ",
+          [Function],
+          "%;
+        border-radius: 4px;
+        background: #E0E0E0;
+        transition: all 100ms ease;
+      }
+      &:hover {
+        ",
+          ".sc-bZQynM",
+          " {
+          opacity: 1;
+        }
+        &::before {
+          background: #FF0000;
+        }
+      }
+    ",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-gzVnrw",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;
+
+exports[`Testing App.styles... ProgressBarHandle should render correctly with offset 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bZQynM",
+        "isStatic": false,
+        "rules": Array [
+          "
+      position: absolute;
+      opacity: 0;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      top: -5px;
+      left: ",
+          [Function],
+          "%;
+      transform: translateX(-5px);
+      background: #EEEEEE;
+      transition: all 100ms ease;
+    ",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bZQynM",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+  offset="50"
+/>
+`;
+
+exports[`Testing App.styles... ProgressBarHandle should render correctly without props 1`] = `
+<StyledComponent
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bZQynM",
+        "isStatic": false,
+        "rules": Array [
+          "
+      position: absolute;
+      opacity: 0;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      top: -5px;
+      left: ",
+          [Function],
+          "%;
+      transform: translateX(-5px);
+      background: #EEEEEE;
+      transition: all 100ms ease;
+    ",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bZQynM",
+      "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
